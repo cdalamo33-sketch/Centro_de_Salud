@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPS San Vicente - La Rioja</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Encabezado y Navegación -->
+  <header class="main-header">
+    <h1>CAPS San Vicente - La Rioja</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#turnos">Turnos</a></li>
+        <li><a href="#contacto">Ubicación</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de Reserva de Turnos -->
+  <section id="turnos" class="container">
+    <h2>Solicitud de Turnos en Línea</h2>
+    <form id="formTurno">
+      <label for="nombre">Nombre Completo:</label>
+      <input type="text" id="nombre" required placeholder="Ej. Juan Pérez">
+
+      <label for="especialidad">Especialidad Médica:</label>
+      <select id="especialidad">
+        <option value="Pediatría">Pediatría</option>
+        <option value="Clínica Médica">Clínica Médica</option>
+        <option value="Odontología">Odontología</option>
+        <option value="Enfermería">Enfermería</option>
+      </select>
+
+      <button type="submit">Reservar Turno</button>
+    </form>
+    <div id="mensajeConfirmacion" class="mensaje"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
